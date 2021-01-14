@@ -33,7 +33,7 @@ export default function InicioCarousel() {
                 <div className="cont_info">
                     <div className="info_izq">
 
-                    <img className= "img_short" src={img + movie.poster_path}></img>
+                    <img className= "img_short" src={img + movie.poster_path} alt=""></img>
                     </div>
                     <div className="info_der">
 

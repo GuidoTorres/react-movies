@@ -29,6 +29,7 @@ function Trailers(props) {
             src={`https://www.youtube.com/embed/${result.key}`}
             key={i}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            
             />
 
           </Carousel>
