@@ -1,0 +1,38 @@
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  background-color: #05090a;
+}
+.links {
+  width: 50%;
+}
+nav{
+  color: white;
+}
+
+.links ul {
+  display: flex;
+  padding: 0.5rem;
+}
+.links li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-left: 2vw;
+  color: white;
+}
+.input_cont {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.input_cont input {
+  width: 20vw;
+  outline: none;
+  border: none;
+  height: 5vh;
+  margin-left: 50%;
+}

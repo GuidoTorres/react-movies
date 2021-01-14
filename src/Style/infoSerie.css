@@ -1,0 +1,72 @@
+.contenedorInfoSeries {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contenedorInfo {
+    display: flex;
+    flex-grow: 1;
+    height: 70vh;
+    background-size: cover;
+    
+  }
+  
+  .frente1 {
+    margin-top: 8rem;
+    z-index: 5;
+    height: 85%;
+    width: 20%;
+    margin-left: 5rem;
+    border-radius: 10px;
+  
+  }
+  .info {
+    z-index: 6;
+    height: 55%;
+    width: 60%;
+    color: white;
+    font: bold 100%/20px Helvetica, Sans-Serif;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 15px;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    overflow: hidden;
+  }
+  
+  .title {
+    text-align: center;
+    size: 20px;
+    font-size: 20px;
+  }
+  
+  .fecha {
+    text-align: end;
+  }
+  
+  .similares {
+    display: inline-block;
+  }
+  
+  .contenedorSimilares {
+    width: 98%;
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .bajoInfoPeliculas {
+    width: 100%;
+  }
+  
+  .contenedorProveedores{
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  

@@ -1,0 +1,22 @@
+.contenedorVideo{
+    margin-top: -10rem;
+    margin-left: 25rem;
+    z-index: 5px;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+
+.videoCarousel{  
+    width: 200px;
+}
+
+.video{
+    margin: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-sizing: border-box;
+    height: 250px;
+    width: 45vw;
+}

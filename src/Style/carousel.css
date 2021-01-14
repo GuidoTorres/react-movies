@@ -1,0 +1,60 @@
+
+.carousel_img{
+
+    width: 100%;
+    height: 80vh;
+    image-rendering: pixelated;
+    object-fit:unset;
+}
+
+.cont_info{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: -75vh;
+    color: white;
+}
+
+.img_short{
+
+    width: 30vw;
+    height: 70vh;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    border-radius: 5px;
+}
+
+.cont_info h1{
+
+    color: white;
+
+}
+.cont_info p{
+
+    color: white;
+    width: 80%;
+    height: 60%;
+
+}
+
+.info_izq{
+    background: none;
+    width: 50%;
+    height: 60vh;
+}
+
+.info_der{
+
+    background: rgba(0, 0, 0, 0.8);
+    height: 40vh;
+    width: 45vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vw;
+
+}
+
+
