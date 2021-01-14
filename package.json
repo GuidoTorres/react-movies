@@ -1,8 +1,8 @@
 {
-  "homepage": "https://guidotorres.github.io/Peliculas/",
   "name": "react-movies",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://guidotorres.github.io/react-movies",
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "@testing-library/jest-dom": "^5.11.5",
@@ -16,10 +16,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
