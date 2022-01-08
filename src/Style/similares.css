@@ -1,0 +1,7 @@
+.similares .imagenes {
+  border-radius: 10px;
+}
+
+.similares .imagenes:hover {
+  cursor: pointer;
+}

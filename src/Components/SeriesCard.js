@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Pagination } from "antd";
 import { useHistory } from "react-router-dom";
 
-
 import "./../Style/seriesCard.css";
 
 export default function SeriesCard({
@@ -15,7 +14,7 @@ export default function SeriesCard({
   const img = "https://image.tmdb.org/t/p/w1280";
   const [series, setSeries] = useState([]);
   const [activePage, setActivePage] = useState();
-  const [dataSerie, setDataSerie] = useState([])
+  const [dataSerie, setDataSerie] = useState([]);
   let history = useHistory();
 
   const handlePageChange = (pageNum) => {
@@ -37,7 +36,7 @@ export default function SeriesCard({
 
   return (
     <div className="contenedor">
-            <h1 style={{marginLeft:"2.5vw", marginTop: "2vh", fontWeight: 'bold', }}>Ultimas series</h1>
+      <h1 style={{ fontWeight: "bold", padding: "8px" }}>Ultimas series</h1>
 
       <div className="seriesCard">
         {series.length > 0 &&
@@ -48,14 +47,12 @@ export default function SeriesCard({
                 alt="example"
                 src={img + serie.poster_path}
                 onClick={() => {
-                  setDataSerie(serie)
-  
-                  history.push('/infoserie', {dataSerie: [serie]})
-                  }}
+                  setDataSerie(serie);
+
+                  history.push("/infoserie", { dataSerie: [serie] });
+                }}
               />
-              <h2>
-                <span> &#127775; {serie.vote_average}</span>
-              </h2>
+
             </div>
           ))}
       </div>

@@ -23,30 +23,28 @@ export default function InicioCarousel() {
     <div className="carouselContenedor">
       <Carousel className="Carousel" autoplay fade>
         {movies.length > 0 &&
-          movies
-            .slice(0, 10)
-            .map((movie, i) => (
-
-
+          movies.slice(0, 10).map((movie, i) => (
             <div key={i}>
-                <img className="carousel_img" src={img + movie.backdrop_path} alt="" />
-                <div className="cont_info">
-                    <div className="info_izq">
-
-                    <img className= "img_short" src={img + movie.poster_path} alt=""></img>
-                    </div>
-                    <div className="info_der">
-
-                    <h1>{movie.original_title}</h1>
-                    <p>{movie.overview}</p>
-                    </div>
+              <img
+                className="carousel_img"
+                src={img + movie.backdrop_path}
+                alt=""
+              />
+              <div className="cont_info">
+                <div className="info_izq">
+                  <h1>{movie.original_title}</h1>
+                  <p>{movie.overview}</p>
                 </div>
-
+                <div className="info_der">
+                  <img
+                    className="img_short"
+                    src={img + movie.poster_path}
+                    alt=""
+                  ></img>
+                </div>
+              </div>
             </div>
-
-
-            ))}
-
+          ))}
       </Carousel>
     </div>
   );

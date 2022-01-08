@@ -1,0 +1,42 @@
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.titulo {
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.box img {
+  border-radius: 5px;
+  width: 95%;
+}
+
+/* .box img:hover {
+  transform: scale(1.1);
+} */
+
+@media screen and (min-width: 400px) {
+  .box {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .box {
+    width: 33.333%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .box {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .box {
+    width: 20%;
+  }
+}

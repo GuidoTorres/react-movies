@@ -1,72 +1,147 @@
 .contenedorInfoSeries {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedorInfo {
+  display: flex;
+  flex-grow: 1;
+  height: 70vh;
+  background-size: cover;
+}
+
+.contenedor__imagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  margin-top: 8rem;
+  height: 85%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.informacion__pelicula {
+  z-index: 6;
+  height: 55%;
+  color: white;
+  font: bold 100%/20px Helvetica, Sans-Serif;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: justify;
+  margin-top: 3rem;
+  overflow: hidden;
+  display: none;
+}
+
+.title {
+  text-align: center;
+  size: 20px;
+  font-size: 20px;
+}
+
+.fecha {
+  text-align: end;
+}
+
+.similares {
+  display: inline-block;
+}
+
+.contenedorSimilares {
+  width: 98%;
+  height: 400px;
+  margin: auto;
+  border-radius: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.bajoInfoPeliculas {
+  width: 100%;
+}
+
+.contenedorProveedores {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+  .contenedor__imagen {
+    width: 50%;
   }
-  
-  .contenedorInfo {
-    display: flex;
-    flex-grow: 1;
-    height: 70vh;
-    background-size: cover;
-    
+
+  .imagen {
+    width: 90%;
   }
-  
-  .frente1 {
-    margin-top: 8rem;
-    z-index: 5;
-    height: 85%;
-    width: 20%;
-    margin-left: 5rem;
-    border-radius: 10px;
-  
+
+  .contenedor__info {
+    width: 50%;
   }
-  .info {
-    z-index: 6;
-    height: 55%;
+
+  .informacion__pelicula {
+    display: block;
+    width: 90%;
+    height: 65%;
+    padding: 10px;
+    margin-top: 12rem;
+  }
+  .informacion__pelicula > p {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contenedor__imagen {
+    width: 50%;
+  }
+
+  .imagen {
+    width: 90%;
+  }
+
+  .contenedor__info {
+    width: 50%;
+  }
+
+  .informacion__pelicula {
+    display: block;
+    width: 90%;
+    height: 65%;
+    padding: 10px;
+  }
+  .informacion__pelicula > p {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .imagen {
+    width: 80%;
+  }
+
+  .contenedor__info {
+    width: 50%;
+  }
+
+  .informacion__pelicula {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .imagen {
     width: 60%;
-    color: white;
-    font: bold 100%/20px Helvetica, Sans-Serif;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    text-align: justify;
-    padding: 15px;
-    margin-top: 3rem;
-    margin-left: 4rem;
-    overflow: hidden;
   }
-  
-  .title {
-    text-align: center;
-    size: 20px;
-    font-size: 20px;
+
+  .contenedor__info {
+    width: 50%;
   }
-  
-  .fecha {
-    text-align: end;
+
+  .informacion__pelicula {
+    width: 70%;
   }
-  
-  .similares {
-    display: inline-block;
-  }
-  
-  .contenedorSimilares {
-    width: 98%;
-    height: 400px;
-    margin: auto;
-    border-radius: 5px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
-  
-  .bajoInfoPeliculas {
-    width: 100%;
-  }
-  
-  .contenedorProveedores{
-  
-    display: flex;
-    justify-content: center;
-  }
-  
-  
+}

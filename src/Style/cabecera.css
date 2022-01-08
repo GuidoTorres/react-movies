@@ -1,13 +1,18 @@
 .cabecera {
   display: flex;
   justify-content: space-between;
-  height: 9vh;
-  background-color: #05090a;
+  height: 7vh;
+  background-color: #1d1d1d;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 12px 0px;
 }
 .links {
   width: 50%;
 }
-nav{
+nav {
   color: white;
 }
 
@@ -18,9 +23,13 @@ nav{
 .links li {
   text-decoration: none;
   list-style: none;
-  font-size: 1.7vw;
+  font-size: 14px;
   font-weight: bold;
   padding-left: 2vw;
+  color: white;
+}
+
+.links a {
   color: white;
 }
 .input_cont {
@@ -28,11 +37,19 @@ nav{
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding: 0px 40px;
 }
 .input_cont input {
-  width: 20vw;
+  width: 25vw;
   outline: none;
   border: none;
-  height: 5vh;
-  margin-left: 50%;
+  height: 4vh;
+  border-radius: 10px;
+  display: none;
+}
+
+.searchIcon {
+  color: white !important;
+  font-size: 18px !important;
 }

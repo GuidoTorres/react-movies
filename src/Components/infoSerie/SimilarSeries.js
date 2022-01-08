@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
-import './../../Style/SimilarSeries.css'
 
 function SimilarSeries(props) {
   const location = useLocation();
@@ -12,7 +11,6 @@ function SimilarSeries(props) {
   let history = useHistory();
 
   useEffect(() => {
-    console.log(location.state.dataSerie[0].id);
     fetch(
       `https://api.themoviedb.org/3/tv/${location.state.dataSerie[0].id}/similar?api_key=c41ebdb54213c9639a0417118b22e457&language=en-US&page=1`
     )

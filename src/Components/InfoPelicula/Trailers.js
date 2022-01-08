@@ -20,7 +20,7 @@ function Trailers(props) {
 
   return (
     <div className="contenedorVideo">
-      {trailer.map((result, i) => (
+      {trailer.slice(0,2).map((result, i) => (
         <div className="videoCarousel" key={i} >       
         <Carousel >
 

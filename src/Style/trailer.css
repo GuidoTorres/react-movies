@@ -1,22 +1,41 @@
-.contenedorVideo{
-    margin-top: -10rem;
-    margin-left: 25rem;
-    z-index: 5px;
-    display: flex;
-    border-radius: 10px;
-    padding: 1rem;
-
+.contenedorVideo {
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-.videoCarousel{  
-    width: 200px;
+.videoCarousel {
+  width: 100%;
 }
 
-.video{
-    margin: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-sizing: border-box;
-    height: 250px;
-    width: 45vw;
+.video {
+  border-radius: 10px;
+  height: 250px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .contenedorVideo {
+    flex-direction: row;
+  }
+  .videoCarousel {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contenedorVideo {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .videoCarousel {
+    width: 40%;
+  }
+
+  .video {
+    width: 50%;
+  }
 }

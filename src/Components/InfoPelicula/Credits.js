@@ -20,23 +20,23 @@ function Credits(props) {
   }, [location.state.data]);
 
   return (
-    <div className="contenedorCreditos">
-          <h1 style={{ textAlign:"center" }}>Casting</h1>
-
-      {credit.map((credits, i) => (
-        <div className="credits" key={i}>
-
-          <div>
-            <Avatar
-              src={img + credits.profile_path}
-              size={80}
-              icon={<UserOutlined />}
-            />
-          <p className="nombresCreditos">{credits.name}</p>
+    <>
+      <h1 style={{ textAlign: "center" }}>Casting</h1>
+      <div className="contenedorCreditos">
+        {credit.map((credits, i) => (
+          <div className="credits" key={i}>
+            <div>
+              <Avatar
+                src={img + credits.profile_path}
+                size={80}
+                icon={<UserOutlined />}
+              />
+              <p className="nombresCreditos">{credits.name}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
 
